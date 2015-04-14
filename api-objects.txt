@@ -781,12 +781,9 @@ fourthevaz.modules.default.calc.safeeval.Opcode.get_pops	fourthevaz.modules.defa
 fourthevaz.modules.default.calc.safeeval.UnknownSymbol	fourthevaz.modules.default.calc.safeeval.UnknownSymbol-class.html
 fourthevaz.modules.default.chatbot.wordai.wordai	fourthevaz.modules.default.chatbot.wordai.wordai-class.html
 fourthevaz.modules.default.chatbot.wordai.wordai.load	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#load
-fourthevaz.modules.default.chatbot.wordai.wordai.dbfile	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#dbfile
+fourthevaz.modules.default.chatbot.wordai.wordai.getdictstring	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#getdictstring
 fourthevaz.modules.default.chatbot.wordai.wordai.process	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#process
 fourthevaz.modules.default.chatbot.wordai.wordai.addchoice	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#addchoice
-fourthevaz.modules.default.chatbot.wordai.wordai.data_dict	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#data_dict
-fourthevaz.modules.default.chatbot.wordai.wordai.getdictstring	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#getdictstring
-fourthevaz.modules.default.chatbot.wordai.wordai.choices	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#choices
 fourthevaz.modules.default.chatbot.wordai.wordai.replace	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#replace
 fourthevaz.modules.default.chatbot.wordai.wordai.getwords	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#getwords
 fourthevaz.modules.default.chatbot.wordai.wordai.ms	fourthevaz.modules.default.chatbot.wordai.wordai-class.html#ms
