@@ -83,13 +83,12 @@
 </tr>
 <tr class="private">
     <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">str</span>
+      <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="fourthevaz.modules.default.share.google-module.html#get_page" class="summary-sig-name" onclick="show_private();">get_page</a>(<span class="summary-sig-arg">url</span>)</span><br />
-      Request the given URL and return the response page, using the cookie 
-      jar.</td>
+      Request the given URL and return the response page, using the cookie jar.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="fourthevaz.modules.default.share.google-pysrc.html#get_page">source&nbsp;code</a></span>
             
@@ -117,7 +116,7 @@
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">generator</span>
+      <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
@@ -252,21 +251,22 @@ m)d&amp;start=%(start)d&amp;tbs=%(tbs)s&amp;safe=%(safe)s&quot;">&quot;http://ww
     </td>
   </tr></table>
   
-  <p>Request the given URL and return the response page, using the cookie 
-  jar.</p>
+  <pre class="literalblock">
+
+Request the given URL and return the response page, using the cookie jar.
+
+@type  url: str
+@param url: URL to retrieve.
+
+@rtype:  str
+@return: Web page retrieved for the given URL.
+
+@raise IOError: An exception is raised on error.
+@raise urllib2.URLError: An exception is raised on error.
+@raise urllib2.HTTPError: An exception is raised on error.
+
+</pre>
   <dl class="fields">
-    <dt>Parameters:</dt>
-    <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>url</code></strong> (str) - URL to retrieve.</li>
-    </ul></dd>
-    <dt>Returns: str</dt>
-        <dd>Web page retrieved for the given URL.</dd>
-    <dt>Raises:</dt>
-    <dd><ul class="nomargin-top">
-        <li><code><strong class='fraise'>IOError</strong></code> - An exception is raised on error.</li>
-        <li><code><strong class='fraise'>urllib2.URLError</strong></code> - An exception is raised on error.</li>
-        <li><code><strong class='fraise'>urllib2.HTTPError</strong></code> - An exception is raised on error.</li>
-    </ul></dd>
   </dl>
 </td></tr></table>
 </div>
@@ -293,34 +293,52 @@ m)d&amp;start=%(start)d&amp;tbs=%(tbs)s&amp;safe=%(safe)s&quot;">&quot;http://ww
     </td>
   </tr></table>
   
-  <p>Search the given query string using Google.</p>
+  <pre class="literalblock">
+
+Search the given query string using Google.
+
+@type  query: str
+@param query: Query string. Must NOT be url-encoded.
+
+@type  tld: str
+@param tld: Top level domain.
+
+@type  lang: str
+@param lang: Languaje.
+
+@type  tbs: str
+@param tbs: Time limits (i.e &quot;qdr:h&quot; =&gt; last hour, &quot;qdr:d&quot; =&gt; last 24 hours, &quot;qdr:m&quot; =&gt; last month).
+
+@type  safe: str
+@param safe: Safe search.
+
+@type  num: int
+@param num: Number of results per page.
+
+@type  start: int
+@param start: First result to retrieve.
+
+@type  stop: int
+@param stop: Last result to retrieve.
+    Use C{None} to keep searching forever.
+
+@type  pause: float
+@param pause: Lapse to wait between HTTP requests.
+    A lapse too long will make the search slow, but a lapse too short may
+    cause Google to block your IP. Your mileage may vary!
+
+@type  only_standard: bool
+@param only_standard: If C{True}, only returns the standard results from
+    each page. If C{False}, it returns every possible link from each page,
+    except for those that point back to Google itself. Defaults to C{False}
+    for backwards compatibility with older versions of this module.
+
+@rtype:  generator
+@return: Generator (iterator) that yields found URLs. If the C{stop}
+    parameter is C{None} the iterator will loop forever.
+
+</pre>
   <dl class="fields">
-    <dt>Parameters:</dt>
-    <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>query</code></strong> (str) - Query string. Must NOT be url-encoded.</li>
-        <li><strong class="pname"><code>tld</code></strong> (str) - Top level domain.</li>
-        <li><strong class="pname"><code>lang</code></strong> (str) - Languaje.</li>
-        <li><strong class="pname"><code>tbs</code></strong> (str) - Time limits (i.e &quot;qdr:h&quot; =&gt; last hour, 
-          &quot;qdr:d&quot; =&gt; last 24 hours, &quot;qdr:m&quot; =&gt; 
-          last month).</li>
-        <li><strong class="pname"><code>safe</code></strong> (str) - Safe search.</li>
-        <li><strong class="pname"><code>num</code></strong> (int) - Number of results per page.</li>
-        <li><strong class="pname"><code>start</code></strong> (int) - First result to retrieve.</li>
-        <li><strong class="pname"><code>stop</code></strong> (int) - Last result to retrieve. Use <code>None</code> to keep searching 
-          forever.</li>
-        <li><strong class="pname"><code>pause</code></strong> (float) - Lapse to wait between HTTP requests. A lapse too long will make 
-          the search slow, but a lapse too short may cause Google to block 
-          your IP. Your mileage may vary!</li>
-        <li><strong class="pname"><code>only_standard</code></strong> (bool) - If <code>True</code>, only returns the standard results from each
-          page. If <code>False</code>, it returns every possible link from 
-          each page, except for those that point back to Google itself. 
-          Defaults to <code>False</code> for backwards compatibility with 
-          older versions of this module.</li>
-    </ul></dd>
-    <dt>Returns: generator</dt>
-        <dd>Generator (iterator) that yields found URLs. If the 
-          <code>stop</code> parameter is <code>None</code> the iterator 
-          will loop forever.</dd>
   </dl>
 </td></tr></table>
 </div>
@@ -469,7 +487,7 @@ LWPCookieJar(os.path.join(home_folder, '.google-cookie'))
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Tue Apr 14 09:41:00 2015
+    Generated by Epydoc 3.0.1 on Tue Apr 14 09:44:20 2015
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

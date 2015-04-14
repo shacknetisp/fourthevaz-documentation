@@ -64,8 +64,12 @@
 </table>
 <!-- ==================== MODULE DESCRIPTION ==================== -->
 <h1 class="epydoc">Module safeeval</h1><p class="nomargin-top"><span class="codelink"><a href="fourthevaz.modules.default.calc.safeeval-pysrc.html">source&nbsp;code</a></span></p>
-<p>&quot;</p>
-  <p>The orignal author: Alexer / #python.fi</p>
+<pre class="literalblock">
+&quot;
+
+The orignal author: Alexer / #python.fi
+
+</pre>
 
 <!-- ==================== CLASSES ==================== -->
 <a name="section-Classes"></a>
@@ -89,8 +93,7 @@
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a href="fourthevaz.modules.default.calc.safeeval.UnknownSymbol-class.html" class="summary-name">UnknownSymbol</a><br />
-      There was a function or constant in the expression we don't 
-        support.
+      There was a function or constant in the expression we don't support.
     </td>
   </tr>
 <tr>
@@ -182,8 +185,7 @@
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a href="fourthevaz.modules.default.calc.safeeval.ROT_THREE-class.html" class="summary-name">ROT_THREE</a><br />
-      Lifts second and third stack item one position up, moves top down to 
-      position three.
+      Lifts second and third stack item one position up, moves top down to position three.
     </td>
   </tr>
 <tr>
@@ -191,8 +193,7 @@
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a href="fourthevaz.modules.default.calc.safeeval.ROT_FOUR-class.html" class="summary-name">ROT_FOUR</a><br />
-      Lifts second, third and forth stack item one position up, moves top 
-      down to position four.
+      Lifts second, third and forth stack item one position up, moves top down to position four.
     </td>
   </tr>
 <tr>
@@ -200,8 +201,7 @@
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a href="fourthevaz.modules.default.calc.safeeval.UNARY-class.html" class="summary-name">UNARY</a><br />
-      Unary Operations take the top of the stack, apply the operation, and 
-      push the result back on the stack.
+      Unary Operations take the top of the stack, apply the operation, and push the result back on the stack.
     </td>
   </tr>
 <tr>
@@ -225,8 +225,7 @@
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a href="fourthevaz.modules.default.calc.safeeval.BINARY-class.html" class="summary-name">BINARY</a><br />
-      Binary operations remove the top of the stack (TOS) and the second 
-      top-most stack item (TOS1) from the stack.
+      Binary operations remove the top of the stack (TOS) and the second top-most stack item (TOS1) from the stack.
     </td>
   </tr>
 <tr>
@@ -250,8 +249,7 @@
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a href="fourthevaz.modules.default.calc.safeeval.BINARY_DIVIDE-class.html" class="summary-name">BINARY_DIVIDE</a><br />
-      Implements TOS = TOS1 / TOS when from __future__ import division is 
-      not in effect.
+      Implements TOS = TOS1 / TOS when from __future__ import division is not in effect.
     </td>
   </tr>
 <tr>
@@ -291,8 +289,7 @@
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a href="fourthevaz.modules.default.calc.safeeval.BINARY_TRUE_DIVIDE-class.html" class="summary-name">BINARY_TRUE_DIVIDE</a><br />
-      Implements TOS = TOS1 / TOS when from __future__ import division is 
-      in effect.
+      Implements TOS = TOS1 / TOS when from __future__ import division is in effect.
     </td>
   </tr>
 <tr>
@@ -410,8 +407,8 @@
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="fourthevaz.modules.default.calc.safeeval-module.html#disassemble" class="summary-sig-name">disassemble</a>(<span class="summary-sig-arg">co</span>)</span><br />
-      Loop through Python bytecode and match instructions with our internal
-      opcodes.</td>
+      Loop through Python bytecode and match instructions
+with our internal opcodes.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="fourthevaz.modules.default.calc.safeeval-pysrc.html#disassemble">source&nbsp;code</a></span>
             
@@ -428,8 +425,7 @@
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="fourthevaz.modules.default.calc.safeeval-module.html#check_for_pow" class="summary-sig-name">check_for_pow</a>(<span class="summary-sig-arg">expr</span>)</span><br />
-      Python evaluates power operator during the compile time if its on 
-      constants.</td>
+      Python evaluates power operator during the compile time if its on constants.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="fourthevaz.modules.default.calc.safeeval-pysrc.html#check_for_pow">source&nbsp;code</a></span>
             
@@ -448,8 +444,7 @@
           <td><span class="summary-sig"><a href="fourthevaz.modules.default.calc.safeeval-module.html#_safe_eval" class="summary-sig-name" onclick="show_private();">_safe_eval</a>(<span class="summary-sig-arg">expr</span>,
         <span class="summary-sig-arg">functions_and_constants</span>=<span class="summary-sig-default">{}</span>,
         <span class="summary-sig-arg">check_compiling_input</span>=<span class="summary-sig-default">True</span>)</span><br />
-      Evaluate a Pythonic math expression and return the output as a 
-      string.</td>
+      Evaluate a Pythonic math expression and return the output as a string.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="fourthevaz.modules.default.calc.safeeval-pysrc.html#_safe_eval">source&nbsp;code</a></span>
             
@@ -528,9 +523,13 @@
     </td>
   </tr></table>
   
-  <p>Timeout decorator using Python multiprocessing.</p>
-  <p>Courtesy of http://code.activestate.com/recipes/ 
-  577853-timeout-decorator-with-multiprocessing/</p>
+  <pre class="literalblock">
+Timeout decorator using Python multiprocessing.
+
+Courtesy of http://code.activestate.com/recipes/
+577853-timeout-decorator-with-multiprocessing/
+
+</pre>
   <dl class="fields">
   </dl>
 </td></tr></table>
@@ -549,9 +548,13 @@
     </td>
   </tr></table>
   
-  <p>Loop through Python bytecode and match instructions with our internal 
-  opcodes.</p>
-  <p>:param co: Python code object</p>
+  <pre class="literalblock">
+Loop through Python bytecode and match instructions
+with our internal opcodes.
+
+:param co: Python code object
+
+</pre>
   <dl class="fields">
   </dl>
 </td></tr></table>
@@ -570,12 +573,15 @@
     </td>
   </tr></table>
   
-  <p>Python evaluates power operator during the compile time if its on 
-  constants.</p>
-  <p>You can do CPU / memory burning attack with 
-  ``2**999999999999999999999**9999999999999``. We mainly care about memory 
-  now, as we catch timeoutting in any case.</p>
-  <p>We just disable pow and do not care about it.</p>
+  <pre class="literalblock">
+Python evaluates power operator during the compile time if its on constants.
+
+You can do CPU / memory burning attack with ``2**999999999999999999999**9999999999999``.
+We mainly care about memory now, as we catch timeoutting in any case.
+
+We just disable pow and do not care about it.
+
+</pre>
   <dl class="fields">
   </dl>
 </td></tr></table>
@@ -596,12 +602,15 @@
     </td>
   </tr></table>
   
-  <p>Evaluate a Pythonic math expression and return the output as a 
-  string.</p>
-  <p>The expr is limited to 1024 characters / 1024 operations to prevent 
-  CPU burning or memory stealing.</p>
-  <p>:param functions_and_constants: Supplied &quot;built-in&quot; data for
-  evaluation</p>
+  <pre class="literalblock">
+Evaluate a Pythonic math expression and return the output as a string.
+
+The expr is limited to 1024 characters / 1024 operations
+to prevent CPU burning or memory stealing.
+
+:param functions_and_constants: Supplied &quot;built-in&quot; data for evaluation
+
+</pre>
   <dl class="fields">
   </dl>
 </td></tr></table>
@@ -622,10 +631,14 @@
     </td>
   </tr></table>
   
-  <p>Hardered compile + eval for long running maths.</p>
-  <p>Mitigate against CPU burning attacks.</p>
-  <p>If some nasty user figures out a way around our limitations to make 
-  really really slow calculations.</p>
+  <pre class="literalblock">
+Hardered compile + eval for long running maths.
+
+Mitigate against CPU burning attacks.
+
+If some nasty user figures out a way around our limitations to make really really slow calculations.
+
+</pre>
   <dl class="fields">
     <dt>Decorators:</dt>
     <dd><ul class="nomargin-top">
@@ -666,7 +679,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Tue Apr 14 09:41:00 2015
+    Generated by Epydoc 3.0.1 on Tue Apr 14 09:44:20 2015
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
