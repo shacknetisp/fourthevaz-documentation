@@ -465,9 +465,17 @@ fourthevaz.irc.server.Server.ServerConnectionException	fourthevaz.irc.server.Ser
 fourthevaz.irc.server.Server.ServerConnectionException.__str__	fourthevaz.irc.server.Server.ServerConnectionException-class.html#__str__
 fourthevaz.irc.server.Server.ServerConnectionException.__init__	fourthevaz.irc.server.Server.ServerConnectionException-class.html#__init__
 fourthevaz.irc.splitparse.SplitParser	fourthevaz.irc.splitparse.SplitParser-class.html
+fourthevaz.irc.splitparse.SplitParser.sendernick	fourthevaz.irc.splitparse.SplitParser-class.html#sendernick
+fourthevaz.irc.splitparse.SplitParser.sender	fourthevaz.irc.splitparse.SplitParser-class.html#sender
+fourthevaz.irc.splitparse.SplitParser.text	fourthevaz.irc.splitparse.SplitParser-class.html#text
+fourthevaz.irc.splitparse.SplitParser.object	fourthevaz.irc.splitparse.SplitParser-class.html#object
+fourthevaz.irc.splitparse.SplitParser.host	fourthevaz.irc.splitparse.SplitParser-class.html#host
+fourthevaz.irc.splitparse.SplitParser.command	fourthevaz.irc.splitparse.SplitParser-class.html#command
 fourthevaz.irc.splitparse.SplitParser.iscode	fourthevaz.irc.splitparse.SplitParser-class.html#iscode
 fourthevaz.irc.splitparse.SplitParser.getsplit	fourthevaz.irc.splitparse.SplitParser-class.html#getsplit
+fourthevaz.irc.splitparse.SplitParser.message	fourthevaz.irc.splitparse.SplitParser-class.html#message
 fourthevaz.irc.splitparse.SplitParser.__init__	fourthevaz.irc.splitparse.SplitParser-class.html#__init__
+fourthevaz.irc.splitparse.SplitParser.target	fourthevaz.irc.splitparse.SplitParser-class.html#target
 fourthevaz.irc.utils.formatcodes	fourthevaz.irc.utils.formatcodes-class.html
 fourthevaz.irc.utils.formatcodes.color	fourthevaz.irc.utils.formatcodes-class.html#color
 fourthevaz.irc.utils.formatcodes.yellow	fourthevaz.irc.utils.formatcodes-class.html#yellow
