@@ -121,6 +121,7 @@ fourthevaz.modules.core.modop.init	fourthevaz.modules.core.modop-module.html#ini
 fourthevaz.modules.core.modop.add	fourthevaz.modules.core.modop-module.html#add
 fourthevaz.modules.core.modop.remove	fourthevaz.modules.core.modop-module.html#remove
 fourthevaz.modules.core.more	fourthevaz.modules.core.more-module.html
+fourthevaz.modules.core.more.clearmore	fourthevaz.modules.core.more-module.html#clearmore
 fourthevaz.modules.core.more.init	fourthevaz.modules.core.more-module.html#init
 fourthevaz.modules.core.more.more	fourthevaz.modules.core.more-module.html#more
 fourthevaz.modules.core.nickserv	fourthevaz.modules.core.nickserv-module.html
