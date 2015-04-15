@@ -152,7 +152,6 @@ fourthevaz.modules.core.rights.addrights	fourthevaz.modules.core.rights-module.h
 fourthevaz.modules.core.rights.init	fourthevaz.modules.core.rights-module.html#init
 fourthevaz.modules.core.rights.rightexists	fourthevaz.modules.core.rights-module.html#rightexists
 fourthevaz.modules.core.rights.getrights	fourthevaz.modules.core.rights-module.html#getrights
-fourthevaz.modules.core.rights.whoami	fourthevaz.modules.core.rights-module.html#whoami
 fourthevaz.modules.core.rights.delrights	fourthevaz.modules.core.rights-module.html#delrights
 fourthevaz.modules.core.rights.access	fourthevaz.modules.core.rights.access-module.html
 fourthevaz.modules.core.rights.access.raiseifnotformeduser	fourthevaz.modules.core.rights.access-module.html#raiseifnotformeduser
