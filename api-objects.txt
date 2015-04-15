@@ -14,8 +14,8 @@ fourthevaz.configs.match	fourthevaz.configs.match-module.html
 fourthevaz.configs.match.matchnocase	fourthevaz.configs.match-module.html#matchnocase
 fourthevaz.configs.match.match	fourthevaz.configs.match-module.html#match
 fourthevaz.configs.mload	fourthevaz.configs.mload-module.html
-fourthevaz.configs.mload.find_module	fourthevaz.configs.mload-module.html#find_module
 fourthevaz.configs.mload.import_module_py	fourthevaz.configs.mload-module.html#import_module_py
+fourthevaz.configs.mload.find_module	fourthevaz.configs.mload-module.html#find_module
 fourthevaz.configs.mload.import_module	fourthevaz.configs.mload-module.html#import_module
 fourthevaz.configs.mload.serverinit	fourthevaz.configs.mload-module.html#serverinit
 fourthevaz.configs.module	fourthevaz.configs.module-module.html
@@ -48,6 +48,7 @@ fourthevaz.modules.core.aliases	fourthevaz.modules.core.aliases-module.html
 fourthevaz.modules.core.aliases.get	fourthevaz.modules.core.aliases-module.html#get
 fourthevaz.modules.core.aliases.aliasfunction	fourthevaz.modules.core.aliases-module.html#aliasfunction
 fourthevaz.modules.core.aliases.init	fourthevaz.modules.core.aliases-module.html#init
+fourthevaz.modules.core.aliases.alias_prepare	fourthevaz.modules.core.aliases-module.html#alias_prepare
 fourthevaz.modules.core.aliases.setalias	fourthevaz.modules.core.aliases-module.html#setalias
 fourthevaz.modules.core.aliases.delete	fourthevaz.modules.core.aliases-module.html#delete
 fourthevaz.modules.core.channels	fourthevaz.modules.core.channels-module.html
@@ -55,9 +56,10 @@ fourthevaz.modules.core.channels.init	fourthevaz.modules.core.channels-module.ht
 fourthevaz.modules.core.channels.part	fourthevaz.modules.core.channels-module.html#part
 fourthevaz.modules.core.channels.join	fourthevaz.modules.core.channels-module.html#join
 fourthevaz.modules.core.commands	fourthevaz.modules.core.commands-module.html
+fourthevaz.modules.core.commands.recv	fourthevaz.modules.core.commands-module.html#recv
 fourthevaz.modules.core.commands.init	fourthevaz.modules.core.commands-module.html#init
 fourthevaz.modules.core.commands.doptext	fourthevaz.modules.core.commands-module.html#doptext
-fourthevaz.modules.core.commands.recv	fourthevaz.modules.core.commands-module.html#recv
+fourthevaz.modules.core.commands.ext_prepare	fourthevaz.modules.core.commands-module.html#ext_prepare
 fourthevaz.modules.core.dcc	fourthevaz.modules.core.dcc-module.html
 fourthevaz.modules.core.dcc.whois_done	fourthevaz.modules.core.dcc-module.html#whois_done
 fourthevaz.modules.core.dcc.dcc_connected	fourthevaz.modules.core.dcc-module.html#dcc_connected
@@ -429,6 +431,7 @@ fourthevaz.irc.fullparse.FullParse.Channel.__init__	fourthevaz.irc.fullparse.Ful
 fourthevaz.irc.fullparse.FullParse.Channel.aliases	fourthevaz.irc.fullparse.FullParse.Channel-class.html#aliases
 fourthevaz.irc.server.Server	fourthevaz.irc.server.Server-class.html
 fourthevaz.irc.server.Server.whoislist	fourthevaz.irc.server.Server-class.html#whoislist
+fourthevaz.irc.server.Server.modulepaths	fourthevaz.irc.server.Server-class.html#modulepaths
 fourthevaz.irc.server.Server.process	fourthevaz.irc.server.Server-class.html#process
 fourthevaz.irc.server.Server.reinit	fourthevaz.irc.server.Server-class.html#reinit
 fourthevaz.irc.server.Server.channels	fourthevaz.irc.server.Server-class.html#channels
