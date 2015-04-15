@@ -237,7 +237,6 @@ fourthevaz.modules.default.linkparser.init	fourthevaz.modules.default.linkparser
 fourthevaz.modules.default.linkparser.recv	fourthevaz.modules.default.linkparser-module.html#recv
 fourthevaz.modules.default.messaging	fourthevaz.modules.default.messaging-module.html
 fourthevaz.modules.default.messaging.init	fourthevaz.modules.default.messaging-module.html#init
-fourthevaz.modules.default.messaging.timer	fourthevaz.modules.default.messaging-module.html#timer
 fourthevaz.modules.default.messaging.recv	fourthevaz.modules.default.messaging-module.html#recv
 fourthevaz.modules.default.messaging.tell	fourthevaz.modules.default.messaging-module.html#tell
 fourthevaz.modules.default.moderator	fourthevaz.modules.default.moderator-module.html
@@ -418,6 +417,7 @@ fourthevaz.irc.fullparse.FullParse.outtarget	fourthevaz.irc.fullparse.FullParse-
 fourthevaz.irc.fullparse.FullParse.me	fourthevaz.irc.fullparse.FullParse-class.html#me
 fourthevaz.irc.fullparse.FullParse.channelrights	fourthevaz.irc.fullparse.FullParse-class.html#channelrights
 fourthevaz.irc.fullparse.FullParse.execute	fourthevaz.irc.fullparse.FullParse-class.html#execute
+fourthevaz.irc.fullparse.FullParse.sendctcp	fourthevaz.irc.fullparse.FullParse-class.html#sendctcp
 fourthevaz.irc.fullparse.FullParse.hasright	fourthevaz.irc.fullparse.FullParse-class.html#hasright
 fourthevaz.irc.fullparse.FullParse.replyctcp	fourthevaz.irc.fullparse.FullParse-class.html#replyctcp
 fourthevaz.irc.fullparse.FullParse.sp	fourthevaz.irc.fullparse.FullParse-class.html#sp
