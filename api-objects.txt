@@ -128,10 +128,11 @@ fourthevaz.modules.core.more.clearmore	fourthevaz.modules.core.more-module.html#
 fourthevaz.modules.core.more.init	fourthevaz.modules.core.more-module.html#init
 fourthevaz.modules.core.more.more	fourthevaz.modules.core.more-module.html#more
 fourthevaz.modules.core.nickserv	fourthevaz.modules.core.nickserv-module.html
-fourthevaz.modules.core.nickserv.init	fourthevaz.modules.core.nickserv-module.html#init
-fourthevaz.modules.core.nickserv.recv	fourthevaz.modules.core.nickserv-module.html#recv
+fourthevaz.modules.core.nickserv.commands_ignore	fourthevaz.modules.core.nickserv-module.html#commands_ignore
 fourthevaz.modules.core.nickserv.joined	fourthevaz.modules.core.nickserv-module.html#joined
 fourthevaz.modules.core.nickserv.nickserv	fourthevaz.modules.core.nickserv-module.html#nickserv
+fourthevaz.modules.core.nickserv.init	fourthevaz.modules.core.nickserv-module.html#init
+fourthevaz.modules.core.nickserv.recv	fourthevaz.modules.core.nickserv-module.html#recv
 fourthevaz.modules.core.nicktrouble	fourthevaz.modules.core.nicktrouble-module.html
 fourthevaz.modules.core.nicktrouble.init	fourthevaz.modules.core.nicktrouble-module.html#init
 fourthevaz.modules.core.nicktrouble.recv	fourthevaz.modules.core.nicktrouble-module.html#recv
@@ -439,6 +440,7 @@ fourthevaz.irc.server.Server.connect	fourthevaz.irc.server.Server-class.html#con
 fourthevaz.irc.server.Server.reconnect	fourthevaz.irc.server.Server-class.html#reconnect
 fourthevaz.irc.server.Server.do_base_hook	fourthevaz.irc.server.Server-class.html#do_base_hook
 fourthevaz.irc.server.Server.write_raw	fourthevaz.irc.server.Server-class.html#write_raw
+fourthevaz.irc.server.Server.port	fourthevaz.irc.server.Server-class.html#port
 fourthevaz.irc.server.Server.__init__	fourthevaz.irc.server.Server-class.html#__init__
 fourthevaz.irc.server.Server.log	fourthevaz.irc.server.Server-class.html#log
 fourthevaz.irc.server.Server.process_message	fourthevaz.irc.server.Server-class.html#process_message
@@ -456,6 +458,7 @@ fourthevaz.irc.server.Server.auth	fourthevaz.irc.server.Server-class.html#auth
 fourthevaz.irc.server.Server.update_aliases	fourthevaz.irc.server.Server-class.html#update_aliases
 fourthevaz.irc.server.Server.ServerConnectException	fourthevaz.irc.server.Server.ServerConnectException-class.html
 fourthevaz.irc.server.Server.setuser	fourthevaz.irc.server.Server-class.html#setuser
+fourthevaz.irc.server.Server.address	fourthevaz.irc.server.Server-class.html#address
 fourthevaz.irc.server.Server.whois	fourthevaz.irc.server.Server-class.html#whois
 fourthevaz.irc.server.Server.write_cmd	fourthevaz.irc.server.Server-class.html#write_cmd
 fourthevaz.irc.server.Server.whoisbuffer	fourthevaz.irc.server.Server-class.html#whoisbuffer
