@@ -452,8 +452,9 @@ fourthevaz.irc.server.Server.delete_module	fourthevaz.irc.server.Server-class.ht
 fourthevaz.irc.server.Server.initjoin	fourthevaz.irc.server.Server-class.html#initjoin
 fourthevaz.irc.server.Server.socketready	fourthevaz.irc.server.Server-class.html#socketready
 fourthevaz.irc.server.Server.db	fourthevaz.irc.server.Server-class.html#db
-fourthevaz.irc.server.Server.ServerConnectException	fourthevaz.irc.server.Server.ServerConnectException-class.html
+fourthevaz.irc.server.Server.auth	fourthevaz.irc.server.Server-class.html#auth
 fourthevaz.irc.server.Server.update_aliases	fourthevaz.irc.server.Server-class.html#update_aliases
+fourthevaz.irc.server.Server.ServerConnectException	fourthevaz.irc.server.Server.ServerConnectException-class.html
 fourthevaz.irc.server.Server.setuser	fourthevaz.irc.server.Server-class.html#setuser
 fourthevaz.irc.server.Server.whois	fourthevaz.irc.server.Server-class.html#whois
 fourthevaz.irc.server.Server.write_cmd	fourthevaz.irc.server.Server-class.html#write_cmd
