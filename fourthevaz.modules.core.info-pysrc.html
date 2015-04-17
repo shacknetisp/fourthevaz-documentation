@@ -68,7 +68,8 @@
 <a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-2" class="py-name" targets="Module fourthevaz.version=fourthevaz.version-module.html,Variable fourthevaz.version.version=fourthevaz.version-module.html#version"><a title="fourthevaz.version
 fourthevaz.version.version" class="py-name" href="#" onclick="return doclink('link-2', 'version', 'link-2');">version</a></tt> </tt>
 <a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">datetime</tt> </tt>
-<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Module fourthevaz.modules.default.time=fourthevaz.modules.default.time-module.html"><a title="fourthevaz.modules.default.time" class="py-name" href="#" onclick="return doclink('link-3', 'time', 'link-3');">time</a></tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Module fourthevaz.modules.default.time=fourthevaz.modules.default.time-module.html,Class fourthevaz.utils.time=fourthevaz.utils.time-class.html"><a title="fourthevaz.modules.default.time
+fourthevaz.utils.time" class="py-name" href="#" onclick="return doclink('link-3', 'time', 'link-3');">time</a></tt> </tt>
 <a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-4" class="py-name" targets="Module fourthevaz.irc.utils=fourthevaz.irc.utils-module.html,Module fourthevaz.utils=fourthevaz.utils-module.html"><a title="fourthevaz.irc.utils
 fourthevaz.utils" class="py-name" href="#" onclick="return doclink('link-4', 'utils', 'link-4');">utils</a></tt> </tt>
 <a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"> </tt>
@@ -182,7 +183,8 @@ fourthevaz.version.version" class="py-name" href="#" onclick="return doclink('li
 </div><a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line"> </tt>
 <a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line"> </tt>
 <a name="ctcp_time"></a><div id="ctcp_time-def"><a name="L94"></a><tt class="py-lineno"> 94</tt> <a class="py-toggle" href="#" id="ctcp_time-toggle" onclick="return toggle('ctcp_time');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.info-module.html#ctcp_time">ctcp_time</a><tt class="py-op">(</tt><tt class="py-param">fp</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="ctcp_time-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="ctcp_time-expanded"><a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">    <tt class="py-name">val</tt> <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt id="link-68" class="py-name"><a title="fourthevaz.modules.default.time" class="py-name" href="#" onclick="return doclink('link-68', 'time', 'link-3');">time</a></tt><tt class="py-op">.</tt><tt class="py-name">timezone</tt> <tt class="py-op">/</tt> <tt class="py-number">60</tt> <tt class="py-op">/</tt> <tt class="py-number">60</tt><tt class="py-op">)</tt> </tt>
+</div><div id="ctcp_time-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="ctcp_time-expanded"><a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">    <tt class="py-name">val</tt> <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt id="link-68" class="py-name"><a title="fourthevaz.modules.default.time
+fourthevaz.utils.time" class="py-name" href="#" onclick="return doclink('link-68', 'time', 'link-3');">time</a></tt><tt class="py-op">.</tt><tt class="py-name">timezone</tt> <tt class="py-op">/</tt> <tt class="py-number">60</tt> <tt class="py-op">/</tt> <tt class="py-number">60</tt><tt class="py-op">)</tt> </tt>
 <a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">    <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-69" class="py-name"><a title="fourthevaz.irc.fullparse.FullParse.replyctcp" class="py-name" href="#" onclick="return doclink('link-69', 'replyctcp', 'link-28');">replyctcp</a></tt><tt class="py-op">(</tt><tt class="py-string">'TIME '</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">datetime</tt><tt class="py-op">.</tt><tt class="py-name">datetime</tt><tt class="py-op">.</tt><tt class="py-name">now</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">strftime</tt><tt class="py-op">(</tt> </tt>
 <a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">    <tt class="py-string">'%Y-%m-%d %H:%M:%S GMT '</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-string">""</tt> <tt class="py-keyword">if</tt> <tt class="py-name">val</tt> <tt class="py-op">&lt;</tt> <tt class="py-number">0</tt> <tt class="py-keyword">else</tt> <tt class="py-string">"+"</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt> </tt>
 <a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">    <tt class="py-name">val</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
@@ -245,7 +247,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Thu Apr 16 21:34:40 2015
+    Generated by Epydoc 3.0.1 on Thu Apr 16 22:41:52 2015
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

@@ -860,3 +860,6 @@ fourthevaz.modules.default.translate.translate'._BaseRequestMinix._check_threads
 fourthevaz.modules.default.translate.translate'._TranslateMinix._merge_jsons	fourthevaz.modules.default.translate.translate%27._TranslateMinix-class.html#_merge_jsons
 fourthevaz.modules.default.translate.translate'._BaseRequestMinix._request_with_reconnect	fourthevaz.modules.default.translate.translate%27._BaseRequestMinix-class.html#_request_with_reconnect
 fourthevaz.modules.default.translate.translate'._TranslateMinix._basic_request	fourthevaz.modules.default.translate.translate%27._TranslateMinix-class.html#_basic_request
+fourthevaz.utils.time	fourthevaz.utils.time-class.html
+fourthevaz.utils.time.durstr	fourthevaz.utils.time-class.html#durstr
+fourthevaz.utils.time.agostr	fourthevaz.utils.time-class.html#agostr

@@ -166,7 +166,34 @@
 <a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">    <tt class="py-keyword">import</tt> <tt class="py-name">datetime</tt> </tt>
 <a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">    <tt class="py-name">dt</tt> <tt class="py-op">=</tt> <tt class="py-name">datetime</tt><tt class="py-op">.</tt><tt class="py-name">datetime</tt><tt class="py-op">.</tt><tt class="py-name">utcnow</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
 <a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">dt</tt><tt class="py-op">.</tt><tt class="py-name">timestamp</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
-</div><a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+</div><a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line"> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"> </tt>
+<a name="time"></a><div id="time-def"><a name="L108"></a><tt class="py-lineno">108</tt> <a class="py-toggle" href="#" id="time-toggle" onclick="return toggle('time');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="fourthevaz.utils.time-class.html">time</a><tt class="py-op">:</tt> </tt>
+</div><div id="time-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="time-expanded"><a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">    <tt class="py-docstring">"""Time related functions"""</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line"> </tt>
+<a name="time.durstr"></a><div id="time.durstr-def"><a name="L111"></a><tt class="py-lineno">111</tt> <a class="py-toggle" href="#" id="time.durstr-toggle" onclick="return toggle('time.durstr');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.utils.time-class.html#durstr">durstr</a><tt class="py-op">(</tt><tt class="py-param">dur</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="time.durstr-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="time.durstr-expanded"><a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">        <tt class="py-docstring">"""Return dur as a formatted string."""</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">        <tt class="py-name">ret</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">style</tt> <tt class="py-keyword">in</tt> <tt class="py-op">[</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">            <tt class="py-op">(</tt><tt class="py-number">60</tt> <tt class="py-op">*</tt> <tt class="py-number">60</tt> <tt class="py-op">*</tt> <tt class="py-number">24</tt> <tt class="py-op">*</tt> <tt class="py-number">7</tt><tt class="py-op">,</tt> <tt class="py-string">'w'</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">            <tt class="py-op">(</tt><tt class="py-number">60</tt> <tt class="py-op">*</tt> <tt class="py-number">60</tt> <tt class="py-op">*</tt> <tt class="py-number">24</tt><tt class="py-op">,</tt> <tt class="py-string">'d'</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">            <tt class="py-op">(</tt><tt class="py-number">60</tt> <tt class="py-op">*</tt> <tt class="py-number">60</tt><tt class="py-op">,</tt> <tt class="py-string">'h'</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">            <tt class="py-op">(</tt><tt class="py-number">60</tt><tt class="py-op">,</tt> <tt class="py-string">'m'</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">            <tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-string">'s'</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">            <tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">                <tt class="py-name">amount</tt> <tt class="py-op">=</tt> <tt class="py-name">dur</tt> <tt class="py-op">//</tt> <tt class="py-name">style</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">                <tt class="py-name">extra</tt> <tt class="py-op">=</tt> <tt class="py-name">dur</tt> <tt class="py-op">%</tt> <tt class="py-name">style</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">                <tt class="py-name">dur</tt> <tt class="py-op">=</tt> <tt class="py-name">extra</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">amount</tt> <tt class="py-op">&gt;</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">                    <tt class="py-name">ret</tt> <tt class="py-op">+=</tt> <tt class="py-string">'%d%s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt><tt class="py-name">amount</tt><tt class="py-op">,</tt> <tt class="py-name">style</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line"> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ret</tt> <tt class="py-keyword">if</tt> <tt class="py-name">ret</tt> <tt class="py-keyword">else</tt> <tt class="py-string">'???'</tt> </tt>
+</div><a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line"> </tt>
+<a name="time.agostr"></a><div id="time.agostr-def"><a name="L129"></a><tt class="py-lineno">129</tt> <a class="py-toggle" href="#" id="time.agostr-toggle" onclick="return toggle('time.agostr');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.utils.time-class.html#agostr">agostr</a><tt class="py-op">(</tt><tt class="py-param">ts</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="time.agostr-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="time.agostr-expanded"><a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">        <tt class="py-docstring">"""Return durstr(utcepoch() - ts)."""</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt id="link-14" class="py-name" targets="Module fourthevaz.modules.default.time=fourthevaz.modules.default.time-module.html,Class fourthevaz.utils.time=fourthevaz.utils.time-class.html"><a title="fourthevaz.modules.default.time
+fourthevaz.utils.time" class="py-name" href="#" onclick="return doclink('link-14', 'time', 'link-14');">time</a></tt><tt class="py-op">.</tt><tt id="link-15" class="py-name" targets="Method fourthevaz.utils.time.durstr()=fourthevaz.utils.time-class.html#durstr"><a title="fourthevaz.utils.time.durstr" class="py-name" href="#" onclick="return doclink('link-15', 'durstr', 'link-15');">durstr</a></tt><tt class="py-op">(</tt><tt id="link-16" class="py-name" targets="Function fourthevaz.utils.utcepoch()=fourthevaz.utils-module.html#utcepoch"><a title="fourthevaz.utils.utcepoch" class="py-name" href="#" onclick="return doclink('link-16', 'utcepoch', 'link-16');">utcepoch</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-op">-</tt> <tt class="py-name">ts</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line"> </tt><script type="text/javascript">
 <!--
 expandto(location.href);
 // -->
@@ -204,7 +231,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Thu Apr 16 21:34:41 2015
+    Generated by Epydoc 3.0.1 on Thu Apr 16 22:41:50 2015
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
