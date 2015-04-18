@@ -52,9 +52,9 @@ fourthevaz.modules.core.aliases.alias_prepare	fourthevaz.modules.core.aliases-mo
 fourthevaz.modules.core.aliases.setalias	fourthevaz.modules.core.aliases-module.html#setalias
 fourthevaz.modules.core.aliases.delete	fourthevaz.modules.core.aliases-module.html#delete
 fourthevaz.modules.core.channels	fourthevaz.modules.core.channels-module.html
+fourthevaz.modules.core.channels.join	fourthevaz.modules.core.channels-module.html#join
 fourthevaz.modules.core.channels.init	fourthevaz.modules.core.channels-module.html#init
 fourthevaz.modules.core.channels.part	fourthevaz.modules.core.channels-module.html#part
-fourthevaz.modules.core.channels.join	fourthevaz.modules.core.channels-module.html#join
 fourthevaz.modules.core.commands	fourthevaz.modules.core.commands-module.html
 fourthevaz.modules.core.commands.recv	fourthevaz.modules.core.commands-module.html#recv
 fourthevaz.modules.core.commands.init	fourthevaz.modules.core.commands-module.html#init
