@@ -30,12 +30,7 @@
       <th>&nbsp;&nbsp;&nbsp;<a
         href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
 
-  <!-- Project homepage -->
-      <th class="navbar" align="right" width="100%">
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr><th class="navbar" align="center"
-            ><a class="navbar" target="_top" href="https://github.com/shacknetisp/fourthevaz">Project Homepage</a></th>
-          </tr></table></th>
+      <th class="navbar" width="100%"></th>
   </tr>
 </table>
 <table width="100%" cellpadding="0" cellspacing="0">
@@ -121,42 +116,44 @@ fourthevaz.modules.core.list.aliases" class="py-name" href="#" onclick="return d
 <a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">    <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
 <a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">m</tt> <tt class="py-keyword">in</tt> <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-25" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-25', 'server', 'link-17');">server</a></tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="fourthevaz.modules" class="py-name" href="#" onclick="return doclink('link-26', 'modules', 'link-18');">modules</a></tt><tt class="py-op">:</tt> </tt>
 <a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line">            <tt id="link-27" class="py-name"><a title="fourthevaz.modules.core.log.output" class="py-name" href="#" onclick="return doclink('link-27', 'output', 'link-16');">output</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">m</tt><tt class="py-op">.</tt><tt id="link-28" class="py-name"><a title="fourthevaz.version.name" class="py-name" href="#" onclick="return doclink('link-28', 'name', 'link-19');">name</a></tt><tt class="py-op">)</tt> </tt>
-<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt><tt class="py-op">(</tt><tt class="py-string">'%s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt> </tt>
-<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">        <tt id="link-29" class="py-name"><a title="fourthevaz.irc.utils
-fourthevaz.utils" class="py-name" href="#" onclick="return doclink('link-29', 'utils', 'link-3');">utils</a></tt><tt class="py-op">.</tt><tt id="link-30" class="py-name" targets="Function fourthevaz.utils.ltos()=fourthevaz.utils-module.html#ltos"><a title="fourthevaz.utils.ltos" class="py-name" href="#" onclick="return doclink('link-30', 'ltos', 'link-30');">ltos</a></tt><tt class="py-op">(</tt><tt class="py-name">sorted</tt><tt class="py-op">(</tt><tt id="link-31" class="py-name"><a title="fourthevaz.modules.core.log.output" class="py-name" href="#" onclick="return doclink('link-31', 'output', 'link-16');">output</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
-<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line">        <tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
-</div><a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line"> </tt>
-<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line"> </tt>
-<a name="commands"></a><div id="commands-def"><a name="L58"></a><tt class="py-lineno">58</tt> <a class="py-toggle" href="#" id="commands-toggle" onclick="return toggle('commands');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.list-module.html#commands">commands</a><tt class="py-op">(</tt><tt class="py-param">fp</tt><tt class="py-op">,</tt> <tt class="py-param">args</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="commands-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="commands-expanded"><a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">    <tt id="link-32" class="py-name"><a title="fourthevaz.modules.core.commands
-fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-32', 'commands', 'link-9');">commands</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
-<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">m</tt> <tt class="py-keyword">in</tt> <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-33" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-33', 'server', 'link-17');">server</a></tt><tt class="py-op">.</tt><tt id="link-34" class="py-name"><a title="fourthevaz.modules" class="py-name" href="#" onclick="return doclink('link-34', 'modules', 'link-18');">modules</a></tt><tt class="py-op">:</tt> </tt>
-<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">a</tt> <tt class="py-keyword">in</tt> <tt class="py-name">m</tt><tt class="py-op">.</tt><tt class="py-name">command_hooks</tt><tt class="py-op">:</tt> </tt>
-<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">a</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt id="link-35" class="py-name"><a title="fourthevaz.modules.core.commands
-fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-35', 'commands', 'link-9');">commands</a></tt><tt class="py-op">:</tt> </tt>
-<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line">                <tt id="link-36" class="py-name"><a title="fourthevaz.modules.core.commands
-fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-36', 'commands', 'link-9');">commands</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt> </tt>
-<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">    <tt id="link-37" class="py-name"><a title="fourthevaz.modules.core.commands
-fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-37', 'commands', 'link-9');">commands</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-38" class="py-name" targets="Method fourthevaz.irc.fullparse.FullParse.get_aliases()=fourthevaz.irc.fullparse.FullParse-class.html#get_aliases"><a title="fourthevaz.irc.fullparse.FullParse.get_aliases" class="py-name" href="#" onclick="return doclink('link-38', 'get_aliases', 'link-38');">get_aliases</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
-<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt><tt class="py-op">(</tt><tt class="py-string">'%s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt> </tt>
-<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">        <tt id="link-39" class="py-name"><a title="fourthevaz.irc.utils
-fourthevaz.utils" class="py-name" href="#" onclick="return doclink('link-39', 'utils', 'link-3');">utils</a></tt><tt class="py-op">.</tt><tt id="link-40" class="py-name"><a title="fourthevaz.utils.ltos" class="py-name" href="#" onclick="return doclink('link-40', 'ltos', 'link-30');">ltos</a></tt><tt class="py-op">(</tt><tt class="py-name">sorted</tt><tt class="py-op">(</tt><tt id="link-41" class="py-name"><a title="fourthevaz.modules.core.commands
-fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-41', 'commands', 'link-9');">commands</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
-<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">        <tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
-</div><a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line"> </tt>
-<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line"> </tt>
-<a name="aliases"></a><div id="aliases-def"><a name="L70"></a><tt class="py-lineno">70</tt> <a class="py-toggle" href="#" id="aliases-toggle" onclick="return toggle('aliases');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.list-module.html#aliases">aliases</a><tt class="py-op">(</tt><tt class="py-param">fp</tt><tt class="py-op">,</tt> <tt class="py-param">args</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="aliases-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="aliases-expanded"><a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">    <tt id="link-42" class="py-name"><a title="fourthevaz.modules.core.commands
-fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-42', 'commands', 'link-9');">commands</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
-<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">m</tt> <tt class="py-keyword">in</tt> <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-43" class="py-name"><a title="fourthevaz.irc.fullparse.FullParse.get_aliases" class="py-name" href="#" onclick="return doclink('link-43', 'get_aliases', 'link-38');">get_aliases</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">        <tt id="link-44" class="py-name"><a title="fourthevaz.modules.core.commands
-fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-44', 'commands', 'link-9');">commands</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">m</tt><tt class="py-op">)</tt> </tt>
-<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt><tt class="py-op">(</tt><tt class="py-string">'%s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt> </tt>
-<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">        <tt id="link-45" class="py-name"><a title="fourthevaz.irc.utils
-fourthevaz.utils" class="py-name" href="#" onclick="return doclink('link-45', 'utils', 'link-3');">utils</a></tt><tt class="py-op">.</tt><tt id="link-46" class="py-name"><a title="fourthevaz.utils.ltos" class="py-name" href="#" onclick="return doclink('link-46', 'ltos', 'link-30');">ltos</a></tt><tt class="py-op">(</tt><tt class="py-name">sorted</tt><tt class="py-op">(</tt><tt id="link-47" class="py-name"><a title="fourthevaz.modules.core.commands
-fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-47', 'commands', 'link-9');">commands</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
-<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">        <tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
-</div><a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt id="link-29" class="py-name"><a title="fourthevaz.modules.core.log.output" class="py-name" href="#" onclick="return doclink('link-29', 'output', 'link-16');">output</a></tt><tt class="py-op">:</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-string">'No results.'</tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt><tt class="py-op">(</tt><tt class="py-string">'%s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">        <tt id="link-30" class="py-name"><a title="fourthevaz.irc.utils
+fourthevaz.utils" class="py-name" href="#" onclick="return doclink('link-30', 'utils', 'link-3');">utils</a></tt><tt class="py-op">.</tt><tt id="link-31" class="py-name" targets="Function fourthevaz.utils.ltos()=fourthevaz.utils-module.html#ltos"><a title="fourthevaz.utils.ltos" class="py-name" href="#" onclick="return doclink('link-31', 'ltos', 'link-31');">ltos</a></tt><tt class="py-op">(</tt><tt class="py-name">sorted</tt><tt class="py-op">(</tt><tt id="link-32" class="py-name"><a title="fourthevaz.modules.core.log.output" class="py-name" href="#" onclick="return doclink('link-32', 'output', 'link-16');">output</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">        <tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line"> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line"> </tt>
+<a name="commands"></a><div id="commands-def"><a name="L60"></a><tt class="py-lineno">60</tt> <a class="py-toggle" href="#" id="commands-toggle" onclick="return toggle('commands');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.list-module.html#commands">commands</a><tt class="py-op">(</tt><tt class="py-param">fp</tt><tt class="py-op">,</tt> <tt class="py-param">args</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="commands-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="commands-expanded"><a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">    <tt id="link-33" class="py-name"><a title="fourthevaz.modules.core.commands
+fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-33', 'commands', 'link-9');">commands</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">m</tt> <tt class="py-keyword">in</tt> <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-34" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-34', 'server', 'link-17');">server</a></tt><tt class="py-op">.</tt><tt id="link-35" class="py-name"><a title="fourthevaz.modules" class="py-name" href="#" onclick="return doclink('link-35', 'modules', 'link-18');">modules</a></tt><tt class="py-op">:</tt> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">a</tt> <tt class="py-keyword">in</tt> <tt class="py-name">m</tt><tt class="py-op">.</tt><tt class="py-name">command_hooks</tt><tt class="py-op">:</tt> </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">a</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt id="link-36" class="py-name"><a title="fourthevaz.modules.core.commands
+fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-36', 'commands', 'link-9');">commands</a></tt><tt class="py-op">:</tt> </tt>
+<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line">                <tt id="link-37" class="py-name"><a title="fourthevaz.modules.core.commands
+fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-37', 'commands', 'link-9');">commands</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">    <tt id="link-38" class="py-name"><a title="fourthevaz.modules.core.commands
+fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-38', 'commands', 'link-9');">commands</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-39" class="py-name" targets="Method fourthevaz.irc.fullparse.FullParse.get_aliases()=fourthevaz.irc.fullparse.FullParse-class.html#get_aliases"><a title="fourthevaz.irc.fullparse.FullParse.get_aliases" class="py-name" href="#" onclick="return doclink('link-39', 'get_aliases', 'link-39');">get_aliases</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt><tt class="py-op">(</tt><tt class="py-string">'%s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">        <tt id="link-40" class="py-name"><a title="fourthevaz.irc.utils
+fourthevaz.utils" class="py-name" href="#" onclick="return doclink('link-40', 'utils', 'link-3');">utils</a></tt><tt class="py-op">.</tt><tt id="link-41" class="py-name"><a title="fourthevaz.utils.ltos" class="py-name" href="#" onclick="return doclink('link-41', 'ltos', 'link-31');">ltos</a></tt><tt class="py-op">(</tt><tt class="py-name">sorted</tt><tt class="py-op">(</tt><tt id="link-42" class="py-name"><a title="fourthevaz.modules.core.commands
+fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-42', 'commands', 'link-9');">commands</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line">        <tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line"> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line"> </tt>
+<a name="aliases"></a><div id="aliases-def"><a name="L72"></a><tt class="py-lineno">72</tt> <a class="py-toggle" href="#" id="aliases-toggle" onclick="return toggle('aliases');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.list-module.html#aliases">aliases</a><tt class="py-op">(</tt><tt class="py-param">fp</tt><tt class="py-op">,</tt> <tt class="py-param">args</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="aliases-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="aliases-expanded"><a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">    <tt id="link-43" class="py-name"><a title="fourthevaz.modules.core.commands
+fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-43', 'commands', 'link-9');">commands</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">m</tt> <tt class="py-keyword">in</tt> <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-44" class="py-name"><a title="fourthevaz.irc.fullparse.FullParse.get_aliases" class="py-name" href="#" onclick="return doclink('link-44', 'get_aliases', 'link-39');">get_aliases</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">        <tt id="link-45" class="py-name"><a title="fourthevaz.modules.core.commands
+fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-45', 'commands', 'link-9');">commands</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">m</tt><tt class="py-op">)</tt> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt><tt class="py-op">(</tt><tt class="py-string">'%s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt> </tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line">        <tt id="link-46" class="py-name"><a title="fourthevaz.irc.utils
+fourthevaz.utils" class="py-name" href="#" onclick="return doclink('link-46', 'utils', 'link-3');">utils</a></tt><tt class="py-op">.</tt><tt id="link-47" class="py-name"><a title="fourthevaz.utils.ltos" class="py-name" href="#" onclick="return doclink('link-47', 'ltos', 'link-31');">ltos</a></tt><tt class="py-op">(</tt><tt class="py-name">sorted</tt><tt class="py-op">(</tt><tt id="link-48" class="py-name"><a title="fourthevaz.modules.core.commands
+fourthevaz.modules.core.list.commands" class="py-name" href="#" onclick="return doclink('link-48', 'commands', 'link-9');">commands</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line">        <tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line"> </tt><script type="text/javascript">
 <!--
 expandto(location.href);
 // -->
@@ -183,18 +180,13 @@ expandto(location.href);
       <th>&nbsp;&nbsp;&nbsp;<a
         href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
 
-  <!-- Project homepage -->
-      <th class="navbar" align="right" width="100%">
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr><th class="navbar" align="center"
-            ><a class="navbar" target="_top" href="https://github.com/shacknetisp/fourthevaz">Project Homepage</a></th>
-          </tr></table></th>
+      <th class="navbar" width="100%"></th>
   </tr>
 </table>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Sat Apr 18 11:47:39 2015
+    Generated by Epydoc 3.0.1 on Sun Apr 26 22:16:05 2015
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

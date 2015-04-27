@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>fourthevaz.modules.core.api</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="fourthevaz-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="fourthevaz-module.html">Package&nbsp;fourthevaz</a> ::
+        <a href="fourthevaz.modules-module.html">Package&nbsp;modules</a> ::
+        <a href="fourthevaz.modules.core-module.html">Package&nbsp;core</a> ::
+        Module&nbsp;api
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="fourthevaz.modules.core.api-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="fourthevaz.modules.core.api-module.html">Module fourthevaz.modules.core.api</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding: utf-8 -*-</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-0" class="py-name" targets="Package fourthevaz.configs=fourthevaz.configs-module.html"><a title="fourthevaz.configs" class="py-name" href="#" onclick="return doclink('link-0', 'configs', 'link-0');">configs</a></tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Module fourthevaz.configs.module=fourthevaz.configs.module-module.html"><a title="fourthevaz.configs.module" class="py-name" href="#" onclick="return doclink('link-1', 'module', 'link-1');">module</a></tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">wsgiref</tt><tt class="py-op">.</tt><tt class="py-name">simple_server</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">select</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">json</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-2" class="py-name" targets="Module fourthevaz.bot=fourthevaz.bot-module.html"><a title="fourthevaz.bot" class="py-name" href="#" onclick="return doclink('link-2', 'bot', 'link-2');">bot</a></tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">urllib</tt> <tt class="py-keyword">import</tt> <tt class="py-name">parse</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Package fourthevaz.irc=fourthevaz.irc-module.html"><a title="fourthevaz.irc" class="py-name" href="#" onclick="return doclink('link-3', 'irc', 'link-3');">irc</a></tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Module fourthevaz.irc.fullparse=fourthevaz.irc.fullparse-module.html"><a title="fourthevaz.irc.fullparse" class="py-name" href="#" onclick="return doclink('link-4', 'fullparse', 'link-4');">fullparse</a></tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-5" class="py-name"><a title="fourthevaz.irc" class="py-name" href="#" onclick="return doclink('link-5', 'irc', 'link-3');">irc</a></tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Module fourthevaz.irc.splitparse=fourthevaz.irc.splitparse-module.html"><a title="fourthevaz.irc.splitparse" class="py-name" href="#" onclick="return doclink('link-6', 'splitparse', 'link-6');">splitparse</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"> </tt>
+<a name="init"></a><div id="init-def"><a name="L12"></a><tt class="py-lineno">12</tt> <a class="py-toggle" href="#" id="init-toggle" onclick="return toggle('init');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.api-module.html#init">init</a><tt class="py-op">(</tt><tt class="py-param">options</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="init-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="init-expanded"><a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line">    <tt class="py-name">m</tt> <tt class="py-op">=</tt> <tt id="link-7" class="py-name"><a title="fourthevaz.configs" class="py-name" href="#" onclick="return doclink('link-7', 'configs', 'link-0');">configs</a></tt><tt class="py-op">.</tt><tt id="link-8" class="py-name"><a title="fourthevaz.configs.module" class="py-name" href="#" onclick="return doclink('link-8', 'module', 'link-1');">module</a></tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Class fourthevaz.configs.module.Module=fourthevaz.configs.module.Module-class.html"><a title="fourthevaz.configs.module.Module" class="py-name" href="#" onclick="return doclink('link-9', 'Module', 'link-9');">Module</a></tt><tt class="py-op">(</tt><tt class="py-name">__name__</tt><tt class="py-op">)</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-string">'wserver'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">options</tt><tt class="py-op">[</tt><tt class="py-string">'server'</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">state</tt><tt class="py-op">:</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line">        <tt class="py-keyword">del</tt> <tt class="py-name">options</tt><tt class="py-op">[</tt><tt class="py-string">'server'</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">state</tt><tt class="py-op">[</tt><tt class="py-string">'wserver'</tt><tt class="py-op">]</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">    <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'apiport'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">options</tt><tt class="py-op">[</tt><tt class="py-string">'server'</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">entry</tt><tt class="py-op">:</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line">            <tt class="py-name">options</tt><tt class="py-op">[</tt><tt class="py-string">'server'</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">state</tt><tt class="py-op">[</tt> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line">                    <tt class="py-string">'wserver'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">wsgiref</tt><tt class="py-op">.</tt><tt class="py-name">simple_server</tt><tt class="py-op">.</tt><tt class="py-name">make_server</tt><tt class="py-op">(</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">                <tt class="py-string">''</tt><tt class="py-op">,</tt> <tt class="py-name">options</tt><tt class="py-op">[</tt><tt class="py-string">'server'</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">entry</tt><tt class="py-op">[</tt><tt class="py-string">'apiport'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">                <tt id="link-10" class="py-name" targets="Class fourthevaz.modules.core.api.application=fourthevaz.modules.core.api.application-class.html"><a title="fourthevaz.modules.core.api.application" class="py-name" href="#" onclick="return doclink('link-10', 'application', 'link-10');">application</a></tt><tt class="py-op">(</tt><tt class="py-name">options</tt><tt class="py-op">[</tt><tt class="py-string">'server'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">            <tt class="py-keyword">print</tt><tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-string">'Opening API server on %d'</tt> <tt class="py-op">%</tt> <tt class="py-name">options</tt><tt class="py-op">[</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">                <tt class="py-string">'server'</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">entry</tt><tt class="py-op">[</tt><tt class="py-string">'apiport'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">    <tt class="py-keyword">except</tt> <tt class="py-name">OSError</tt><tt class="py-op">:</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt><tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-string">'Unable to open API server on %d'</tt> <tt class="py-op">%</tt> <tt class="py-name">options</tt><tt class="py-op">[</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line">                <tt class="py-string">'server'</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">entry</tt><tt class="py-op">[</tt><tt class="py-string">'apiport'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">    <tt class="py-name">m</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name" targets="Method fourthevaz.configs.module.Module.set_help()=fourthevaz.configs.module.Module-class.html#set_help"><a title="fourthevaz.configs.module.Module.set_help" class="py-name" href="#" onclick="return doclink('link-11', 'set_help', 'link-11');">set_help</a></tt><tt class="py-op">(</tt><tt class="py-string">'Access various bot functions from a json API.'</tt><tt class="py-op">)</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">    <tt class="py-name">m</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Method fourthevaz.configs.module.Module.add_timer_hook()=fourthevaz.configs.module.Module-class.html#add_timer_hook"><a title="fourthevaz.configs.module.Module.add_timer_hook" class="py-name" href="#" onclick="return doclink('link-12', 'add_timer_hook', 'link-12');">add_timer_hook</a></tt><tt class="py-op">(</tt><tt class="py-number">1</tt> <tt class="py-op">*</tt> <tt class="py-number">1000</tt><tt class="py-op">,</tt> <tt id="link-13" class="py-name" targets="Function fourthevaz.modules.core.api.timer()=fourthevaz.modules.core.api-module.html#timer,Function fourthevaz.modules.core.dcc.timer()=fourthevaz.modules.core.dcc-module.html#timer,Function fourthevaz.modules.core.ircusers.timer()=fourthevaz.modules.core.ircusers-module.html#timer,Function fourthevaz.modules.core.ping.timer()=fourthevaz.modules.core.ping-module.html#timer,Function fourthevaz.modules.core.reloader.timer()=fourthevaz.modules.core.reloader-module.html#timer,Function fourthevaz.modules.core.serverdbsave.timer()=fourthevaz.modules.core.serverdbsave-module.html#timer,Function fourthevaz.modules.core.statusout.timer()=fourthevaz.modules.core.statusout-module.html#timer,Function fourthevaz.modules.default.moderator.timer()=fourthevaz.modules.default.moderator-module.html#timer,Function fourthevaz.modules.default.redflare.timer()=fourthevaz.modules.default.redflare-module.html#timer"><a title="fourthevaz.modules.core.api.timer
+fourthevaz.modules.core.dcc.timer
+fourthevaz.modules.core.ircusers.timer
+fourthevaz.modules.core.ping.timer
+fourthevaz.modules.core.reloader.timer
+fourthevaz.modules.core.serverdbsave.timer
+fourthevaz.modules.core.statusout.timer
+fourthevaz.modules.default.moderator.timer
+fourthevaz.modules.default.redflare.timer" class="py-name" href="#" onclick="return doclink('link-13', 'timer', 'link-13');">timer</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">    <tt class="py-name">m</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Method fourthevaz.configs.module.Module.add_base_hook()=fourthevaz.configs.module.Module-class.html#add_base_hook"><a title="fourthevaz.configs.module.Module.add_base_hook" class="py-name" href="#" onclick="return doclink('link-14', 'add_base_hook', 'link-14');">add_base_hook</a></tt><tt class="py-op">(</tt><tt class="py-string">'apiaction'</tt><tt class="py-op">,</tt> <tt id="link-15" class="py-name" targets="Function fourthevaz.modules.core.api.apiaction()=fourthevaz.modules.core.api-module.html#apiaction,Function fourthevaz.modules.core.info.apiaction()=fourthevaz.modules.core.info-module.html#apiaction"><a title="fourthevaz.modules.core.api.apiaction
+fourthevaz.modules.core.info.apiaction" class="py-name" href="#" onclick="return doclink('link-15', 'apiaction', 'link-15');">apiaction</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">m</tt> </tt>
+</div><a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line"> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"> </tt>
+<a name="application"></a><div id="application-def"><a name="L33"></a><tt class="py-lineno">33</tt> <a class="py-toggle" href="#" id="application-toggle" onclick="return toggle('application');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="fourthevaz.modules.core.api.application-class.html">application</a><tt class="py-op">:</tt> </tt>
+</div><div id="application-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="application-expanded"><a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"> </tt>
+<a name="application.__init__"></a><div id="application.__init__-def"><a name="L35"></a><tt class="py-lineno">35</tt> <a class="py-toggle" href="#" id="application.__init__-toggle" onclick="return toggle('application.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.api.application-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">server</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="application.__init__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="application.__init__-expanded"><a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-16" class="py-name" targets="Module fourthevaz.irc.server=fourthevaz.irc.server-module.html"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-16', 'server', 'link-16');">server</a></tt> <tt class="py-op">=</tt> <tt id="link-17" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-17', 'server', 'link-16');">server</a></tt> </tt>
+</div><a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"> </tt>
+<a name="application.__call__"></a><div id="application.__call__-def"><a name="L38"></a><tt class="py-lineno">38</tt> <a class="py-toggle" href="#" id="application.__call__-toggle" onclick="return toggle('application.__call__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.api.application-class.html#__call__">__call__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">environ</tt><tt class="py-op">,</tt> <tt class="py-param">start_response</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="application.__call__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="application.__call__-expanded"><a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">        <tt class="py-name">ret</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">            <tt class="py-string">'status'</tt><tt class="py-op">:</tt> <tt class="py-string">'error'</tt><tt class="py-op">,</tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line">            <tt class="py-string">'message'</tt><tt class="py-op">:</tt> <tt class="py-string">'unknown'</tt><tt class="py-op">,</tt> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line">            <tt class="py-op">}</tt> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line">        <tt class="py-name">start_response</tt><tt class="py-op">(</tt><tt class="py-string">'200 OK'</tt><tt class="py-op">,</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">                       <tt class="py-op">[</tt><tt class="py-op">(</tt><tt class="py-string">'content-type'</tt><tt class="py-op">,</tt> <tt class="py-string">'text/html;charset=utf-8'</tt><tt class="py-op">)</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">        <tt class="py-name">q</tt> <tt class="py-op">=</tt> <tt class="py-name">parse</tt><tt class="py-op">.</tt><tt class="py-name">parse_qs</tt><tt class="py-op">(</tt><tt class="py-name">environ</tt><tt class="py-op">[</tt><tt class="py-string">'QUERY_STRING'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">        <tt class="py-name">action</tt> <tt class="py-op">=</tt> <tt class="py-name">q</tt><tt class="py-op">[</tt><tt class="py-string">'action'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> <tt class="py-keyword">if</tt> <tt class="py-string">'action'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">q</tt> <tt class="py-keyword">else</tt> <tt class="py-string">''</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">            <tt class="py-name">ret</tt><tt class="py-op">[</tt><tt class="py-string">'message'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'invalid action'</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">            <tt class="py-name">ret</tt><tt class="py-op">[</tt><tt class="py-string">'status'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'error'</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-18" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-18', 'server', 'link-16');">server</a></tt><tt class="py-op">.</tt><tt id="link-19" class="py-name" targets="Method fourthevaz.irc.server.Server.do_base_hook()=fourthevaz.irc.server.Server-class.html#do_base_hook"><a title="fourthevaz.irc.server.Server.do_base_hook" class="py-name" href="#" onclick="return doclink('link-19', 'do_base_hook', 'link-19');">do_base_hook</a></tt><tt class="py-op">(</tt><tt class="py-string">'apiaction'</tt><tt class="py-op">,</tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">                <tt class="py-name">ret</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-20" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-20', 'server', 'link-16');">server</a></tt><tt class="py-op">,</tt> <tt class="py-name">q</tt><tt class="py-op">,</tt> <tt class="py-name">environ</tt><tt class="py-op">,</tt> <tt class="py-name">action</tt><tt class="py-op">)</tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt> <tt class="py-name">KeyError</tt><tt class="py-op">:</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">            <tt class="py-keyword">pass</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-op">[</tt><tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">dumps</tt><tt class="py-op">(</tt><tt class="py-name">ret</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">encode</tt><tt class="py-op">(</tt><tt class="py-string">'utf-8'</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+</div></div><a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line"> </tt>
+<a name="apiaction"></a><div id="apiaction-def"><a name="L57"></a><tt class="py-lineno">57</tt> <a class="py-toggle" href="#" id="apiaction-toggle" onclick="return toggle('apiaction');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.api-module.html#apiaction">apiaction</a><tt class="py-op">(</tt><tt class="py-param">ret</tt><tt class="py-op">,</tt> <tt class="py-param">server</tt><tt class="py-op">,</tt> <tt class="py-param">q</tt><tt class="py-op">,</tt> <tt class="py-param">environ</tt><tt class="py-op">,</tt> <tt class="py-param">action</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="apiaction-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="apiaction-expanded"><a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">action</tt> <tt class="py-op">==</tt> <tt class="py-string">'command'</tt><tt class="py-op">:</tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">        <tt class="py-keyword">del</tt> <tt class="py-name">ret</tt><tt class="py-op">[</tt><tt class="py-string">'message'</tt><tt class="py-op">]</tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line"> </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">        <tt class="py-keyword">def</tt> <tt class="py-def-name">process_message</tt><tt class="py-op">(</tt><tt class="py-param">sp</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">            <tt class="py-name">fp</tt> <tt class="py-op">=</tt> <tt id="link-21" class="py-name"><a title="fourthevaz.irc" class="py-name" href="#" onclick="return doclink('link-21', 'irc', 'link-3');">irc</a></tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="fourthevaz.irc.fullparse" class="py-name" href="#" onclick="return doclink('link-22', 'fullparse', 'link-4');">fullparse</a></tt><tt class="py-op">.</tt><tt id="link-23" class="py-name" targets="Class fourthevaz.irc.fullparse.FullParse=fourthevaz.irc.fullparse.FullParse-class.html"><a title="fourthevaz.irc.fullparse.FullParse" class="py-name" href="#" onclick="return doclink('link-23', 'FullParse', 'link-23');">FullParse</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line">                <tt id="link-24" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-24', 'server', 'link-16');">server</a></tt><tt class="py-op">,</tt> <tt class="py-name">sp</tt><tt class="py-op">,</tt> <tt class="py-name">nomore</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">fp</tt><tt class="py-op">.</tt><tt id="link-25" class="py-name" targets="Method fourthevaz.irc.fullparse.FullParse.execute()=fourthevaz.irc.fullparse.FullParse-class.html#execute"><a title="fourthevaz.irc.fullparse.FullParse.execute" class="py-name" href="#" onclick="return doclink('link-25', 'execute', 'link-25');">execute</a></tt><tt class="py-op">(</tt><tt class="py-name">sp</tt><tt class="py-op">.</tt><tt id="link-26" class="py-name" targets="Module fourthevaz.db'.text=fourthevaz.db%27.text-module.html"><a title="fourthevaz.db'.text" class="py-name" href="#" onclick="return doclink('link-26', 'text', 'link-26');">text</a></tt><tt class="py-op">)</tt> </tt>
+</div><a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line">        <tt class="py-name">ip</tt> <tt class="py-op">=</tt> <tt class="py-name">environ</tt><tt class="py-op">[</tt><tt class="py-string">'REMOTE_ADDR'</tt><tt class="py-op">]</tt> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'command'</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">q</tt><tt class="py-op">:</tt> </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">            <tt class="py-name">ret</tt><tt class="py-op">[</tt><tt class="py-string">'message'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'no command'</tt> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">            <tt class="py-name">ret</tt><tt class="py-op">[</tt><tt class="py-string">'status'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'error'</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line">        <tt class="py-name">ret</tt><tt class="py-op">[</tt><tt class="py-string">'output'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt id="link-27" class="py-name" targets="Method fourthevaz.irc.server.Server.process_message()=fourthevaz.irc.server.Server-class.html#process_message,Method fourthevaz.modules.core.dcc.DCC.process_message()=fourthevaz.modules.core.dcc.DCC-class.html#process_message"><a title="fourthevaz.irc.server.Server.process_message
+fourthevaz.modules.core.dcc.DCC.process_message" class="py-name" href="#" onclick="return doclink('link-27', 'process_message', 'link-27');">process_message</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">            <tt id="link-28" class="py-name"><a title="fourthevaz.irc" class="py-name" href="#" onclick="return doclink('link-28', 'irc', 'link-3');">irc</a></tt><tt class="py-op">.</tt><tt id="link-29" class="py-name"><a title="fourthevaz.irc.splitparse" class="py-name" href="#" onclick="return doclink('link-29', 'splitparse', 'link-6');">splitparse</a></tt><tt class="py-op">.</tt><tt id="link-30" class="py-name" targets="Class fourthevaz.irc.splitparse.SplitParser=fourthevaz.irc.splitparse.SplitParser-class.html"><a title="fourthevaz.irc.splitparse.SplitParser" class="py-name" href="#" onclick="return doclink('link-30', 'SplitParser', 'link-30');">SplitParser</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">            <tt class="py-string">':%s!%s PRIVMSG %s :%s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt><tt class="py-string">':'</tt> <tt class="py-op">+</tt> <tt class="py-name">ip</tt><tt class="py-op">,</tt> <tt class="py-string">"~api@"</tt> <tt class="py-op">+</tt> <tt class="py-name">ip</tt><tt class="py-op">,</tt> </tt>
+<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line">                <tt id="link-31" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-31', 'server', 'link-16');">server</a></tt><tt class="py-op">.</tt><tt class="py-name">nick</tt><tt class="py-op">,</tt> </tt>
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">                <tt class="py-name">q</tt><tt class="py-op">[</tt><tt class="py-string">'command'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line">                <tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">        <tt class="py-name">ret</tt><tt class="py-op">[</tt><tt class="py-string">'status'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'good'</tt> </tt>
+</div><a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line"> </tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line"> </tt>
+<a name="timer"></a><div id="timer-def"><a name="L78"></a><tt class="py-lineno">78</tt> <a class="py-toggle" href="#" id="timer-toggle" onclick="return toggle('timer');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.core.api-module.html#timer">timer</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="timer-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="timer-expanded"><a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt id="link-32" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-32', 'server', 'link-16');">server</a></tt> <tt class="py-keyword">in</tt> <tt id="link-33" class="py-name"><a title="fourthevaz.bot" class="py-name" href="#" onclick="return doclink('link-33', 'bot', 'link-2');">bot</a></tt><tt class="py-op">.</tt><tt id="link-34" class="py-name" targets="Function fourthevaz.bot.servers()=fourthevaz.bot-module.html#servers,Module fourthevaz.configs.servers=fourthevaz.configs.servers-module.html,Variable fourthevaz.configs.servers.servers=fourthevaz.configs.servers-module.html#servers"><a title="fourthevaz.bot.servers
+fourthevaz.configs.servers
+fourthevaz.configs.servers.servers" class="py-name" href="#" onclick="return doclink('link-34', 'servers', 'link-34');">servers</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'wserver'</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt id="link-35" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-35', 'server', 'link-16');">server</a></tt><tt class="py-op">.</tt><tt class="py-name">state</tt><tt class="py-op">:</tt> </tt>
+<a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line">            <tt class="py-keyword">continue</tt> </tt>
+<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line">        <tt class="py-name">wserver</tt> <tt class="py-op">=</tt> <tt id="link-36" class="py-name"><a title="fourthevaz.irc.server" class="py-name" href="#" onclick="return doclink('link-36', 'server', 'link-16');">server</a></tt><tt class="py-op">.</tt><tt class="py-name">state</tt><tt class="py-op">[</tt><tt class="py-string">'wserver'</tt><tt class="py-op">]</tt> </tt>
+<a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line">        <tt class="py-name">inr</tt><tt class="py-op">,</tt> <tt class="py-name">_</tt><tt class="py-op">,</tt> <tt class="py-name">_</tt> <tt class="py-op">=</tt> <tt class="py-name">select</tt><tt class="py-op">.</tt><tt class="py-name">select</tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt class="py-name">wserver</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-number">0.1</tt><tt class="py-op">)</tt> </tt>
+<a name="L84"></a><tt class="py-lineno">84</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">inr</tt><tt class="py-op">:</tt> </tt>
+<a name="L85"></a><tt class="py-lineno">85</tt>  <tt class="py-line">            <tt class="py-name">wserver</tt><tt class="py-op">.</tt><tt class="py-name">handle_request</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L86"></a><tt class="py-lineno">86</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="fourthevaz-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Apr 26 22:16:03 2015
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

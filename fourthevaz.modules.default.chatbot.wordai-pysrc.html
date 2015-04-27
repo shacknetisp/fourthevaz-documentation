@@ -30,12 +30,7 @@
       <th>&nbsp;&nbsp;&nbsp;<a
         href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
 
-  <!-- Project homepage -->
-      <th class="navbar" align="right" width="100%">
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr><th class="navbar" align="center"
-            ><a class="navbar" target="_top" href="https://github.com/shacknetisp/fourthevaz">Project Homepage</a></th>
-          </tr></table></th>
+      <th class="navbar" width="100%"></th>
   </tr>
 </table>
 <table width="100%" cellpadding="0" cellspacing="0">
@@ -80,7 +75,8 @@
 </div><div id="wordai.load-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="wordai.load-expanded"><a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line">        <tt class="py-docstring">"""Load the file."""</tt> </tt>
 <a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
 <a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">dict_file</tt> <tt class="py-op">=</tt> <tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">dbfile</tt><tt class="py-op">,</tt> <tt class="py-string">'rb'</tt><tt class="py-op">)</tt> </tt>
-<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data_dict</tt> <tt class="py-op">=</tt> <tt class="py-name">pickle</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Method fourthevaz.db'.text.DB.load()=fourthevaz.db%27.text.DB-class.html#load,Method fourthevaz.modules.default.chatbot.wordai.wordai.load()=fourthevaz.modules.default.chatbot.wordai.wordai-class.html#load"><a title="fourthevaz.db'.text.DB.load
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data_dict</tt> <tt class="py-op">=</tt> <tt class="py-name">pickle</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Method fourthevaz.db'.text.DB.load()=fourthevaz.db%27.text.DB-class.html#load,Method fourthevaz.modules.default.chatbot.ailib.AI.load()=fourthevaz.modules.default.chatbot.ailib.AI-class.html#load,Method fourthevaz.modules.default.chatbot.wordai.wordai.load()=fourthevaz.modules.default.chatbot.wordai.wordai-class.html#load"><a title="fourthevaz.db'.text.DB.load
+fourthevaz.modules.default.chatbot.ailib.AI.load
 fourthevaz.modules.default.chatbot.wordai.wordai.load" class="py-name" href="#" onclick="return doclink('link-0', 'load', 'link-0');">load</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">dict_file</tt><tt class="py-op">)</tt> </tt>
 <a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">dict_file</tt><tt class="py-op">.</tt><tt class="py-name">close</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
 <a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt><tt class="py-op">:</tt> </tt>
@@ -165,7 +161,8 @@ fourthevaz.modules.default.chatbot.wordai.wordai.load" class="py-name" href="#" 
 <a name="wordai.process"></a><div id="wordai.process-def"><a name="L98"></a><tt class="py-lineno"> 98</tt> <a class="py-toggle" href="#" id="wordai.process-toggle" onclick="return toggle('wordai.process');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.default.chatbot.wordai.wordai-class.html#process">process</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">mp</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="wordai.process-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="wordai.process-expanded"><a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">        <tt class="py-docstring">"""Process &lt;mp&gt; and return a reply."""</tt> </tt>
 <a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">        <tt class="py-name">out</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name" targets="Method fourthevaz.modules.default.chatbot.wordai.wordai.ms()=fourthevaz.modules.default.chatbot.wordai.wordai-class.html#ms"><a title="fourthevaz.modules.default.chatbot.wordai.wordai.ms" class="py-name" href="#" onclick="return doclink('link-13', 'ms', 'link-13');">ms</a></tt><tt class="py-op">(</tt><tt class="py-name">mp</tt><tt class="py-op">)</tt> </tt>
-<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Method fourthevaz.db'.text.DB.save()=fourthevaz.db%27.text.DB-class.html#save,Method fourthevaz.modules.default.chatbot.wordai.wordai.save()=fourthevaz.modules.default.chatbot.wordai.wordai-class.html#save"><a title="fourthevaz.db'.text.DB.save
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Method fourthevaz.db'.text.DB.save()=fourthevaz.db%27.text.DB-class.html#save,Method fourthevaz.modules.default.chatbot.ailib.AI.save()=fourthevaz.modules.default.chatbot.ailib.AI-class.html#save,Method fourthevaz.modules.default.chatbot.wordai.wordai.save()=fourthevaz.modules.default.chatbot.wordai.wordai-class.html#save"><a title="fourthevaz.db'.text.DB.save
+fourthevaz.modules.default.chatbot.ailib.AI.save
 fourthevaz.modules.default.chatbot.wordai.wordai.save" class="py-name" href="#" onclick="return doclink('link-14', 'save', 'link-14');">save</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
 <a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">out</tt> </tt>
 </div><a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line"> </tt>
@@ -179,6 +176,7 @@ fourthevaz.modules.default.chatbot.wordai.wordai.save" class="py-name" href="#" 
 <a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">item</tt> <tt class="py-op">==</tt> <tt class="py-name">w</tt><tt class="py-op">:</tt> </tt>
 <a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">                    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data_dict</tt><tt class="py-op">[</tt><tt class="py-name">k</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">index</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">n</tt> </tt>
 <a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="fourthevaz.db'.text.DB.save
+fourthevaz.modules.default.chatbot.ailib.AI.save
 fourthevaz.modules.default.chatbot.wordai.wordai.save" class="py-name" href="#" onclick="return doclink('link-15', 'save', 'link-14');">save</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
 </div><a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line"> </tt>
 <a name="wordai.getdictstring"></a><div id="wordai.getdictstring-def"><a name="L115"></a><tt class="py-lineno">115</tt> <a class="py-toggle" href="#" id="wordai.getdictstring-toggle" onclick="return toggle('wordai.getdictstring');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="fourthevaz.modules.default.chatbot.wordai.wordai-class.html#getdictstring">getdictstring</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
@@ -225,18 +223,13 @@ expandto(location.href);
       <th>&nbsp;&nbsp;&nbsp;<a
         href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
 
-  <!-- Project homepage -->
-      <th class="navbar" align="right" width="100%">
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr><th class="navbar" align="center"
-            ><a class="navbar" target="_top" href="https://github.com/shacknetisp/fourthevaz">Project Homepage</a></th>
-          </tr></table></th>
+      <th class="navbar" width="100%"></th>
   </tr>
 </table>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Sat Apr 18 11:47:39 2015
+    Generated by Epydoc 3.0.1 on Sun Apr 26 22:16:04 2015
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
