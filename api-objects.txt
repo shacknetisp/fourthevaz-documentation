@@ -29,8 +29,8 @@ fourthevaz.imports	fourthevaz.imports-module.html
 fourthevaz.irc	fourthevaz.irc-module.html
 fourthevaz.irc.fullparse	fourthevaz.irc.fullparse-module.html
 fourthevaz.irc.server	fourthevaz.irc.server-module.html
-fourthevaz.irc.server.encode	fourthevaz.irc.server-module.html#encode
 fourthevaz.irc.server.current_milli_time	fourthevaz.irc.server-module.html#current_milli_time
+fourthevaz.irc.server.encode	fourthevaz.irc.server-module.html#encode
 fourthevaz.irc.splitparse	fourthevaz.irc.splitparse-module.html
 fourthevaz.irc.utils	fourthevaz.irc.utils-module.html
 fourthevaz.irc.utils.ctcp	fourthevaz.irc.utils-module.html#ctcp
