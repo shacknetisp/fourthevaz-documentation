@@ -265,6 +265,7 @@ fourthevaz.modules.default.quotes.add	fourthevaz.modules.default.quotes-module.h
 fourthevaz.modules.default.quotes.main	fourthevaz.modules.default.quotes-module.html#main
 fourthevaz.modules.default.quotes.showlist	fourthevaz.modules.default.quotes-module.html#showlist
 fourthevaz.modules.default.redflare	fourthevaz.modules.default.redflare-module.html
+fourthevaz.modules.default.redflare.apiaction	fourthevaz.modules.default.redflare-module.html#apiaction
 fourthevaz.modules.default.redflare.enableredflare	fourthevaz.modules.default.redflare-module.html#enableredflare
 fourthevaz.modules.default.redflare.timer	fourthevaz.modules.default.redflare-module.html#timer
 fourthevaz.modules.default.redflare.init	fourthevaz.modules.default.redflare-module.html#init
