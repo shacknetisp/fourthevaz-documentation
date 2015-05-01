@@ -64,6 +64,13 @@
 </table>
 <!-- ==================== CLASS DESCRIPTION ==================== -->
 <h1 class="epydoc">Class Server</h1><p class="nomargin-top"><span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+base.server.Server --+
+                     |
+                    <strong class="uidshort">Server</strong>
+</pre>
+
+<hr />
 <!-- ==================== NESTED CLASSES ==================== -->
 <a name="section-NestedClasses"></a>
 <table class="summary" border="1" cellpadding="3"
@@ -120,11 +127,6 @@
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a name="__init__"></a><span class="summary-sig-name">__init__</span>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">address</span>,
-        <span class="summary-sig-arg">port</span>,
-        <span class="summary-sig-arg">nick</span>,
-        <span class="summary-sig-arg">name</span>,
-        <span class="summary-sig-arg">channels</span>,
         <span class="summary-sig-arg">entry</span>,
         <span class="summary-sig-arg">options</span>=<span class="summary-sig-default">{'print_log': True,'tick_min': 400,'whois_tick_min': 1000,'rec<code class="variable-ellipsis">...</code></span>)</span></td>
           <td align="right" valign="top">
@@ -142,10 +144,10 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="update_aliases"></a><span class="summary-sig-name">update_aliases</span>(<span class="summary-sig-arg">self</span>)</span><br />
-      Regenerate the alias database.</td>
+          <td><span class="summary-sig"><a name="roomtemplate"></a><span class="summary-sig-name">roomtemplate</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the room template.</td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.update_aliases">source&nbsp;code</a></span>
+            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.roomtemplate">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -182,23 +184,6 @@
         <span class="summary-sig-arg">c</span>)</span></td>
           <td align="right" valign="top">
             <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.shortchannel">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a name="reinit"></a><span class="summary-sig-name">reinit</span>(<span class="summary-sig-arg">self</span>)</span><br />
-      Completely reload the server's modules and aliases.</td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.reinit">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -249,25 +234,6 @@
       JOIN &lt;c&gt; and make the alias database.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.join_channel">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a name="log"></a><span class="summary-sig-name">log</span>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">prefix</span>,
-        <span class="summary-sig-arg">p_text</span>)</span><br />
-      Log &lt;prefix&gt;: &lt;p_text&gt;</td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.log">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -340,23 +306,6 @@
       Write to the output buffer.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.write_nocmd">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a name="modulepaths"></a><span class="summary-sig-name">modulepaths</span>(<span class="summary-sig-arg">self</span>)</span><br />
-      Return a list of all paths where modules might be.</td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.modulepaths">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -470,85 +419,9 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="do_base_hook"></a><span class="summary-sig-name">do_base_hook</span>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">name</span>,
-        <span class="summary-sig-arg">*args</span>,
-        <span class="summary-sig-arg">**kwargs</span>)</span><br />
-      Do base hook &lt;name&gt; with &lt;*args&gt; and &lt;**kwargs&gt;.</td>
+          <td><span class="summary-sig"><a name="reiniting"></a><span class="summary-sig-name">reiniting</span>(<span class="summary-sig-arg">self</span>)</span></td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.do_base_hook">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a name="load_commands"></a><span class="summary-sig-name">load_commands</span>(<span class="summary-sig-arg">self</span>)</span></td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.load_commands">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a name="delete_module"></a><span class="summary-sig-name">delete_module</span>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">name</span>)</span><br />
-      Unload module &lt;name&gt;.</td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.delete_module">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a name="import_module"></a><span class="summary-sig-name">import_module</span>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">name</span>,
-        <span class="summary-sig-arg">do_reload</span>)</span><br />
-      Return an imported module from the current modulesets.</td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.import_module">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a name="add_module"></a><span class="summary-sig-name">add_module</span>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">name</span>,
-        <span class="summary-sig-arg">mset</span>=<span class="summary-sig-default">[]</span>)</span><br />
-      Load module &lt;name&gt;.</td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.add_module">source&nbsp;code</a></span>
+            <span class="codelink"><a href="fourthevaz.irc.server-pysrc.html#Server.reiniting">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -578,24 +451,8 @@
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="db"></a><span class="summary-name">db</span><br />
-      Persistant dictionary for database-specific data.
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-        <a name="adb"></a><span class="summary-name">adb</span><br />
-      This server's access list.
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-        <a name="state"></a><span class="summary-name">state</span><br />
-      Temporary dictionary for server-specific data.
+        <a name="type"></a><span class="summary-name">type</span><br />
+      Type of Server
     </td>
   </tr>
 <tr>
@@ -620,14 +477,6 @@
     </td><td class="summary">
         <a name="nick"></a><span class="summary-name">nick</span><br />
       IRC Nick
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-        <a name="entry"></a><span class="summary-name">entry</span><br />
-      Server's entry in servers.py
     </td>
   </tr>
 <tr>
@@ -736,7 +585,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Wed Apr 29 09:02:32 2015
+    Generated by Epydoc 3.0.1 on Fri May  1 11:38:01 2015
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
