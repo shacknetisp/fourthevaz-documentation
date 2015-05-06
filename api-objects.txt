@@ -66,10 +66,12 @@ fourthevaz.modules.core.api.apiaction	fourthevaz.modules.core.api-module.html#ap
 fourthevaz.modules.core.api.init	fourthevaz.modules.core.api-module.html#init
 fourthevaz.modules.core.api.timer	fourthevaz.modules.core.api-module.html#timer
 fourthevaz.modules.core.commands	fourthevaz.modules.core.commands-module.html
-fourthevaz.modules.core.commands.recv	fourthevaz.modules.core.commands-module.html#recv
 fourthevaz.modules.core.commands.init	fourthevaz.modules.core.commands-module.html#init
 fourthevaz.modules.core.commands.doptext	fourthevaz.modules.core.commands-module.html#doptext
+fourthevaz.modules.core.commands.recv	fourthevaz.modules.core.commands-module.html#recv
 fourthevaz.modules.core.commands.ext_prepare	fourthevaz.modules.core.commands-module.html#ext_prepare
+fourthevaz.modules.core.commands.executer	fourthevaz.modules.core.commands.executer-module.html
+fourthevaz.modules.core.commands.executer.execute	fourthevaz.modules.core.commands.executer-module.html#execute
 fourthevaz.modules.core.echo	fourthevaz.modules.core.echo-module.html
 fourthevaz.modules.core.echo.bold	fourthevaz.modules.core.echo-module.html#bold
 fourthevaz.modules.core.echo.color	fourthevaz.modules.core.echo-module.html#color
